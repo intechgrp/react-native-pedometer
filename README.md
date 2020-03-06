@@ -7,7 +7,7 @@ React Native pedometer support for iOS version 8.0 and higher. The module is CMP
 First install the npm package from your app directory:
 
 ```javascript
-npm install react-native-pedometer --save
+npm install @intechsa/react-native-pedometer --save
 ```
 
 ### Installation on iOS

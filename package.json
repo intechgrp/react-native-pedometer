@@ -1,5 +1,5 @@
 {
-  "name": "react-native-pedometer",
+  "name": "@intechsa/react-native-pedometer",
   "version": "0.0.7",
   "description": "A react-native plugin for using CMPedometer",
   "main": "pedometer.js",
@@ -14,6 +14,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Reptilijonas/react-native-pedometer.git"
+    "url": "git+https://github.com/intechgrp/react-native-pedometer.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/intechsa"
   }
 }
