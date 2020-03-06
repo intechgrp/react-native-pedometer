@@ -15,8 +15,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/intechgrp/react-native-pedometer.git"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/intechsa"
   }
 }
