@@ -9,8 +9,8 @@
 #import "RNPedometer.h"
 
 #import <CoreMotion/CoreMotion.h>
-#import <React/RCTBridge.h>
-#import <React/RCTEventDispatcher.h>
+#import "RCTBridge.h"
+#import "RCTEventDispatcher.h"
 
 @interface RNPedometer ()
 @property (nonatomic, readonly) CMPedometer *pedometer;
