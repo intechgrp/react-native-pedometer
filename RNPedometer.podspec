@@ -1,18 +1,17 @@
 require "json"
-version = JSON.parse(File.read("package.json"))["version"]
+package = JSON.parse(File.read("package.json"))
 
 Pod::Spec.new do |s|
   s.name         = "RNPedometer"
-  s.version      = version
-  s.description  = "Provide Pedometer to your React Native application"
+  s.version      = package['version']
+  s.description  = package['description']
   s.homepage     = "https://github.com/intechgrp/react-native-pedometer"
   s.summary      = "Pedometer"
-  s.license      = "MIT"
-  s.author       = { "Aymeric Zanirato" => "aymeric.zanirato@intech.lu" }
-  s.ios.deployment_target = "7.0"
-  s.source       = { git: "https://github.com/intechgrp/react-native-pedometer", tag: "v" + s.version.to_s }
-  s.source_files = "ios/**/*.{h,m}"
-  s.requires_arc = true
+  s.license      = package['license']
+  s.author       = package['author']
+  s.platform     = :ios, "8.0"
+  s.source       = { git: package["repository"]["url"], :tag => s.version }
+  s.source_files = "**/*.{h,m}"
 
   s.dependency "React"
 end
